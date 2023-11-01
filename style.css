@@ -1,3 +1,58 @@
-body {
-    background-color: bisque;
+/*Global variables*/
+:root {
+--light--gray: hsl(212, 45%, 89%);
+--grayish--blue: hsl(220, 15%, 55%);
+--dark--blue: hsl(218, 44%, 22%);
 }
+
+/*Resets*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Base*/
+html {
+    font-size: 16px;
+}
+
+/*Centering QR component using grid*/
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 1rem;
+    background-color: var(--light--gray);
+    font-family: 'Outfit', sans-serif;
+}
+
+/*QR Contaoner*/
+.qr-container {
+    width: 357px;
+    padding: 1.3rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.qr-img-container img {
+    display: block;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.qr-container h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark--blue);
+    padding: 20px;
+}
+
+.qr-container p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--grayish--blue);
+    padding-bottom: 20px;
+}
+
